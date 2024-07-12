@@ -1,0 +1,134 @@
+body, .userGuide{height: 100%;}
+
+.userGuide .toolBox > div{width: 1180px; margin: 0 auto;}
+/* 공통 넓이값 Fin */
+
+.userGuide .toolBox{z-index: 9; position: fixed; width: 100%; top: 60px; background-color: #4B43FF;}
+.userGuide .toolBox > div{height: 60px; display: flex; align-items: center; justify-content: space-between;}
+.userGuide .toolBox .nav{display: flex; align-items: center;}
+.userGuide .toolBox .nav li{color: #fff; font-size: 14px; line-height: 16px; font-weight: 400; cursor: pointer;}
+.userGuide .toolBox .nav li:hover{text-decoration: underline;}
+.userGuide .toolBox .nav li:not(:first-child){position: relative; margin-left: 20px;}
+.userGuide .toolBox .nav li:not(:first-child):before{content: '/'; font-size: 14px; font-weight: 400; color: #fff; position: absolute; left: -12px; top: 0;}
+/* 헤더 아래 보라색 박스 Fin */
+
+.userGuide .search_box {background-color: #fff; border-radius: 21px 21px 5px 21px; border-bottom: 1px solid #E9E9E9;  height: 40px; width: 360px; display: flex; justify-content: space-between; align-items: center;}
+.userGuide .search_box input[type="text"]{padding: 0 20px; box-sizing: border-box; height:40px; border:none; outline:none; background:none; width: calc(100% - 48px);}
+.userGuide .search_box input[type="text"]::placeholder {color:#CCCCCC; font-size: 14px; font-weight: 400;}
+.userGuide .search_box button {background-color: transparent; outline: none; border: none; height: 40px; width: 48px;}
+.userGuide .search_box button img{width: 16px; height: 16px; display: inline-block; vertical-align: middle;}
+/* 보라색 박스 내 검색창 Fin */
+
+.userGuide .imgBox img{width: 100%; object-fit: cover; display: block;}
+
+.userGuide .contentBox{position: relative; height: calc(100% - 120px); padding-top: 120px;}
+.userGuide .contentBox > div:after{content: ''; display: block; clear: both;}
+.userGuide .contentBox > div{height: 100%; position: relative; width: 1350px; margin: 0 auto;}
+.userGuide .contentBox .left,
+.userGuide .contentBox .right{float: left;}
+.userGuide .contentBox .left{position: sticky; left: 0; top: 160px; width: 365px; padding-left: 85px; box-sizing: border-box;}
+.userGuide .contentBox .right{position: relative; width: 985px;}
+.userGuide .contentBox .left ul li{cursor: pointer;}
+.userGuide .contentBox .left > ul{margin-top: -10px;}
+.userGuide .contentBox .left > ul > li > span{padding: 10px 0; display: block; font-size: 15px; font-weight: 600; color: #616161;}
+.userGuide .contentBox .left > ul > li > ul{display: none;}
+.userGuide .contentBox .left > ul > li.active > span{color: #4B43FF;}
+.userGuide .contentBox .left > ul > li.active > ul{display: block; margin-bottom: 15px;}
+.userGuide .contentBox .left > ul > li > ul > li{padding: 10px 15px; box-sizing: border-box; font-size: 15px; font-weight: 400; color: #616161;}
+.userGuide .contentBox .left > ul > li > ul > li.active{background-color: #F5F5F5; border-radius: 5px;}
+
+.userGuide .contentBox .left .mobileBtn{transition: background 0.2s ease-out; display: none; color: #4B43FF; border-radius: 5px; width: 100%; border: 1px solid #4B43FF; font-size: 15px; font-weight: 600; background-color: transparent; padding: 10px 0;}
+.userGuide .contentBox .left .mobileBtn:hover{background-color: #4B43FF; color: #fff;}
+.userGuide .contentBox .right .mobileMenuTree{filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1)); z-index: 9; background-color: #fff; display: none; position: sticky; top: 220px; left: 0; padding: 0 5% 10px 5%; box-sizing: border-box;}
+.userGuide .contentBox .right .mobileMenuTree li{position: relative; font-size: 14px; color: #4B43FF; font-weight: 400; line-height: 16px;}
+.userGuide .contentBox .right .mobileMenuTree li:not(:first-child){margin-left: 20px;}
+.userGuide .contentBox .right .mobileMenuTree li:not(:first-child):before{content: ''; display: block; position: absolute; left: -14px; top: 3px; background: url('../../assets/images/userGuide/manuTree_arrow.png') center / contain no-repeat; width: 7px; height: 10px; transform: rotate(-90deg);}
+
+.userGuide .contentBox .right .txtWrap{float: right; max-width: 885px; width: 100%; padding: 0 85px 40px 0; box-sizing: border-box;}
+.userGuide .contentBox .right .txtWrap .fixedBox{padding: 40px 0 20px 0; background-color: #fff; position: sticky; top: 120px; left: 0;}
+.userGuide .contentBox .right .txtWrap .fixedBox h2{font-size: 28px; font-weight: 700; color: #000000; line-height: 34px; margin-bottom: 15px;}
+.userGuide .contentBox .right .txtWrap .fixedBox > div > span{font-size: 13px; font-weight: 400; line-height: 15px; color: #9E9E9E;}
+.userGuide .contentBox .right .txtWrap .fixedBox > div > span:not(:first-child){margin-left: 13px; position: relative;}
+.userGuide .contentBox .right .txtWrap .fixedBox > div > span:not(:first-child):before{content: '·'; position: absolute; left: -10px; top: 0; font-size: 13px; font-weight: 400; color: #9E9E9E;}
+.userGuide .contentBox .right .txtWrap .imgBox{border-radius: 5px; overflow: hidden; margin-bottom: 40px;}
+.userGuide .contentBox .right .txtWrap .txtBox h3{font-size: 20px; font-weight: 700; line-height: 32px; color: #222222; margin-bottom: 15px;}
+.userGuide .contentBox .right .txtWrap .txtBox p{font-size: 17px; font-weight: 500; line-height: 28px; color: #616161;}
+.userGuide .contentBox .right .txtWrap .txtBox .paragraph{margin-bottom: 50px;}
+.userGuide .contentBox .right .txtWrap .txtBox .paragraph:not(:last-child) > p:not(:last-child){margin-bottom: 30px;}
+.userGuide .contentBox .right .txtWrap .txtBox .noticeBox{margin-top: 30px; background-color: #E0DFF8; border-radius: 5px; padding: 40px 0;}
+.userGuide .contentBox .right .txtWrap .txtBox .noticeBox p{text-align: center; margin-bottom: 25px; font-size: 18px; font-weight: 400; line-height: 32px; color: #222222;}
+.userGuide .contentBox .right .txtWrap .txtBox .noticeBox p strong{font-size: 18px; font-weight: 600; color: #222222; line-height: 32px; display: block;}
+.userGuide .contentBox .right .txtWrap .txtBox .noticeBox .btnBox{display: flex; justify-content: center;}
+.userGuide .contentBox .right .txtWrap .txtBox .noticeBox .btnBox button{transition: background 0.2s ease-out; background-color: #fff; border-radius: 22px; color: #4B43FF; font-size: 15px; font-weight: 500; border: none; padding: 13px 32px;}
+.userGuide .contentBox .right .txtWrap .txtBox .noticeBox .btnBox button:hover{background-color: #4B43FF; color: #fff;}
+.userGuide .contentBox .btnWrap{z-index: 99; position: sticky; left: 100%; top: 160px; height: calc(100vh - 160px); width: 50px; display: block;}
+.userGuide .contentBox .btnWrap button{margin-bottom: 5px; transition: background 0.2s ease-out; position: relative; display: block; width: 50px; height: 50px; border-radius: 100%; border: 1px solid #E0E0E0; background-color: #fff;}
+.userGuide .contentBox .btnWrap span{display: block; text-align: center; font-size: 13px; font-weight: 400; color: #616161; line-height: 15px;}
+.userGuide .contentBox .btnWrap button:after{content: ''; position: absolute; background-repeat: no-repeat; background-position: center; background-size: contain; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.userGuide .contentBox .btnWrap .btnBox{position: absolute; top: 0; left: 0;}
+.userGuide .contentBox .btnWrap .btnBox > div:not(:last-child){margin-bottom: 25px;}
+.userGuide .contentBox .btnWrap .topBtnBox{position: absolute; left: 0; bottom: 25px;}
+.userGuide .contentBox .btnWrap button:not(.topBtn):hover{background-color: #F5F5F5;}
+.userGuide .contentBox .btnWrap .topBtn:hover{background-color: #4B43FF;}
+.userGuide .contentBox .btnWrap .saveBtn:after{background-image: url('../../assets/images/userGuide/saveBtn.png'); width: 18px; height: 18px;}
+.userGuide .contentBox .btnWrap .shareBtn:after{background-image: url('../../assets/images/userGuide/shareBtn.png'); width: 18px; height: 19px;}
+.userGuide .contentBox .btnWrap .topBtn:after{background-image: url('../../assets/images/userGuide/topBtn.png'); width: 8px; height: 11px;}
+.userGuide .contentBox .btnWrap .topBtn:hover:after{background-image: url('../../assets/images/userGuide/topBtn_active.png');}
+
+@media (max-width: 1600px){
+    .userGuide .toolBox > div{width: 90%;}
+
+    .userGuide .contentBox{padding: 0 5%; box-sizing: border-box;}
+    .userGuide .contentBox > div{width: 100%;}
+    .userGuide .contentBox .left{padding-right: 5%; box-sizing: border-box; padding-left: 0; width: 30%;}
+    .userGuide .contentBox .right{width: 70%;}
+}
+
+@media (max-width: 1024px){
+    .userGuide .contentBox .left,
+    .userGuide .contentBox .btnWrap{top: 180px;}
+    .userGuide .contentBox .btnWrap{height: calc(100vh - 180px);}
+    .userGuide .contentBox .btnWrap .topBtnBox{bottom: 45px;}
+    .userGuide .contentBox .right .txtWrap .fixedBox{padding: 60px 0 20px 0;}
+    .userGuide .toolBox > div{height: 100px; flex-wrap: wrap; align-content: center;}
+    .userGuide .toolBox .nav,
+    .userGuide .toolBox .search_box{width: 100%;}
+    .userGuide .toolBox .nav{margin-bottom: 10px;}
+    .userGuide .contentBox .right .txtWrap .txtBox .noticeBox{padding: 20px;}
+
+}
+
+@media (max-width: 767px){
+    .userGuide.active .header_mo,
+    .userGuide.active .header_mo .top,
+    .userGuide.active .header_mo .hamburger{top: -60px;}
+    .userGuide.active .toolBox{top: -100px;}
+    .userGuide.active .contentBox .left{top: 0;}
+    .userGuide.active .contentBox .right{padding-top: 60px;}
+    .userGuide.active .contentBox .right .mobileMenuTree{top: 60px;}
+    .userGuide.active .contentBox .btnWrap{top: 80px; height: calc(100vh - 80px);}
+    .userGuide.active .contentBox .left.active{height: 100%;}
+
+
+    .userGuide .contentBox{padding: 0;}
+    .userGuide .contentBox .left,
+    .userGuide .contentBox .right{width: 100%;}
+    .userGuide .contentBox .left{padding: 10px 5%; position: fixed; height: auto; top: 160px; left: 0; z-index: 999; background-color: #fff;}
+    .userGuide .contentBox .left.active{height: calc(100% - 160px);}
+    .userGuide .contentBox .left.active > ul{display: block;}
+    .userGuide .contentBox .left > ul{display: none; margin-top: 20px;}
+    .userGuide .contentBox .left > ul > li > span{position: relative;}
+    .userGuide .contentBox .left > ul > li > span:after{transform-origin: center; transition: transform 0.5s ease-out; transform: rotate(0) translateY(-50%); content: ''; display: block; background: url('../../assets/images/userGuide/header_arrow.png') center / contain no-repeat; width: 10px; height: 6px; position: absolute; right: 5%; top: 50%;}
+    .userGuide .contentBox .left > ul > li.active > span:after{top: 44%; transform: rotate(180deg);}
+    
+    .userGuide .contentBox .left .mobileBtn{display: block;}
+    .userGuide .contentBox .right .mobileMenuTree{display: flex;}
+    
+    .userGuide .contentBox .right{padding-top: 220px;}
+    .userGuide .contentBox .btnWrap{padding-right: 10px; top: 220px; height: calc(100vh - 220px);}
+    .userGuide .contentBox .right .txtWrap{max-width: 100%; padding: 0;}
+    .userGuide .contentBox .right .txtWrap .fixedBox{position: static; padding: 10px 5% 10px 5%;}
+    .userGuide .contentBox .right .txtWrap .fixedBox h2{margin-bottom: 5px; font-size: 24px; line-height: 34px;}
+    .userGuide .contentBox .right .txtWrap .txtBox .paragraph{padding: 0 5%; box-sizing: border-box;}
+    
+}

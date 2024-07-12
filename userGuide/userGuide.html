@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>User Guide</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <link rel="stylesheet" href="../assets/css/import.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+    <!-- 모바일(width: 768이하일 때)환경에서 스크롤을 아래로 내리면 userGuide에 active클래스 추가 -->
+    <div class="userGuide">
+        <header>
+            <!-- pc일 때 스크롤 시 header에 active클래스 추가. -->
+            <div class="header_pc">
+                <h1>
+                    <a href="../index.html">
+                        logo
+                    </a>
+                </h1>
+
+                <div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <span>Home</span>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="rightBox">
+                        <button class="freeBtn">30-Day Free Trial</button>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- 모바일 헤더 : 스크롤 시 top이라는 클래스가 붙은 div에 active클래스 추가. -->
+            <!-- hamburger 버튼 클릭 시 header_mo에 active클래스 추가. -->
+            <div class="header_mo">
+                <div class="top">
+                    <h1>
+                        <a href="../index.html">
+                            logo
+                        </a>
+                    </h1>
+                    
+                    <div class="rightBox">
+                        <button class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <span>Home</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="freeBtn">30-Day Free Trial</button>
+                </div>
+            </div>
+        </header>
+        <!-- header Fin -->
+
+        <div class="toolBox">
+            <div>
+                <ul class="nav">
+                    <li>Retentics User Guide</li>
+                    <li>Main Subject</li>
+                    <li>Sub Subject</li>
+                </ul>
+
+                <div class="search_box">
+                    <input type="text" placeholder="Search keywords, contents, and more">
+                    <button type="button" class="ic-button">
+                        <img src="../assets/images/userGuide/search.png" alt="검색아이콘">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- toolBox Fin -->
+        
+
+        <div class="contentBox">
+            <div>
+                <div class="left">
+                    <button class="mobileBtn">사용가이드 목차</button>
+                    <!-- 모바일(width: 768이하일 때)환경에서 활성화 되는 버튼
+                        클릭 시 className 'left' 박스에 active클래스 추가
+                    -->
+
+                    <ul>
+                        <!-- li 클릭 시 active 클래스가 추가되어야 함.
+                            li 내의 ul이 display: none; 에서 display: block; 상태로 변경되며,
+                            span 글씨 색상이 변경되도록 css로 처리 -->
+                        <li class="active">
+                            <span>구독 및 결제</span>
+                            <ul>
+                                <li class="active">리텐틱스 구독 이해하기</li>
+                                <!-- li 클릭 시 active클래스 추가되어야 함. 현재 페이지의 클릭된 상태를 표시하기 위한 클래스 -->
+                                <li>결제수단</li>
+                                <li>유료플랜 구독하기</li>
+                                <li>플랜변경</li>
+                                <li>환불정책</li>
+                            </ul>
+                            <!-- 메뉴를 클릭 했을 때 나오는 subMenuList Fin -->
+                        </li>
+                        <li>
+                            <span>마케팅</span>
+                        </li>
+                        <li>
+                            <span>고객 연락처</span>
+                        </li>
+                        <li>
+                            <span>고객 메신저</span>
+                        </li>
+                        <li>
+                            <span>설치</span>
+                        </li>
+                        <li>
+                            <span>살펴보기</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- left Fin -->
+
+                <div class="right">
+                    <div class="txtWrap">
+                        <ul class="mobileMenuTree">
+                            <li>구독 및 결제</li>
+                            <li>리텐틱스 구독 이해하기</li>
+                        </ul>
+                        <div class="fixedBox">
+                            <h2>리텐틱스 구독 이해하기</h2>
+                            <div>
+                                <span>Yesterday</span>
+                                <span>update time</span>
+                            </div>
+                        </div>
+                        <div class="imgBox">
+                            <img src="../assets/images/userGuide/sample.png" alt="sample">
+                        </div>
+                        <div class="txtBox">
+                            <div class="paragraph">
+                                <h3>What is Lorem Ipsum?</h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
+                                    and scrambled it to make a type specimen book.
+                                </p>
+                                <p>
+                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+                                    essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                                    Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
+                                    including versions of Lorem Ipsum.
+                                </p>
+                            </div>
+                            <!-- 한 문단 단위의 박스 Fin -->
+
+                            <div class="paragraph">
+                                <h3>What is Lorem Ipsum?</h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
+                                    and scrambled it to make a type specimen book.
+                                </p>
+                                <p>
+                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+                                    essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                                    Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
+                                    including versions of Lorem Ipsum.
+                                </p>
+                            </div>
+                            <!-- 한 문단 단위의 박스 Fin -->
+
+                            <div class="noticeBox">
+                                <p>
+                                    Triple Your email marketing conversion 
+                                    <strong>with hyper-personalization!</strong>
+                                </p>
+                                <div class="btnBox">
+                                    <button>30-Day Free Trial</button>
+                                </div>
+                            </div>
+                            <!-- 문단 내용 아래 배경색을 가진 박스 Fin -->
+
+                        </div>
+                    </div>
+
+
+                    <div class="btnWrap">
+                        <div class="btnBox">
+                            <div>
+                                <button class="saveBtn"></button>
+                                <span>저장</span>
+                            </div>
+                            <!-- 저장버튼 Fin -->
+                            <div>
+                                <button class="shareBtn"></button>
+                                <span>공유</span>
+                            </div>
+                            <!-- 공유버튼 Fin -->
+                        </div>
+    
+                        <div class="topBtnBox">
+                            <button class="topBtn"></button>
+                            <span>TOP</span>
+                        </div>
+                        <!-- topBtn Fin -->
+                    </div>
+                    <!-- btnWrap Fin -->
+                </div>
+                <!-- right Fin -->
+
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
