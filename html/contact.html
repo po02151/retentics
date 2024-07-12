@@ -8,8 +8,8 @@
     <title>Contact</title>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="/assets/js/common.js"></script>
-    <link rel="stylesheet" href="/assets/css/import.css">
+    <script src="../assets/js/common.js"></script>
+    <link rel="stylesheet" href="../assets/css/import.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 </head>
@@ -19,36 +19,31 @@
             <!-- pc일 때 스크롤 시 header에 active클래스 추가. -->
             <div class="header_pc">
                 <h1>
-                    <span href="index.html">
+                    <a href="../index.html">
                         logo
-                    </span>
+                    </a>
                 </h1>
 
                 <div>
                     <nav>
                         <ul>
                             <li>
-                                <span>Product</span>
-                                <div>
-                                    <span>Features</span>
-                                    <span>Pricing</span>
-                                </div>
+                                <a href="../html/features.html">Features</a>
                             </li>
                             <li>
-                                <span>Resources</span>
+                                <a href="../html/pricing.html">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="">Resources</a>
                                 <div>
-                                    <span>User Guide</span>
-                                    <span>Blog</span>
+                                    <a href="https://www.retentics.com/blog" target="_blank">Blog</a>
+                                    <a href="../userGuide/userGuide.html" target="_blank">User Guide</a>
                                 </div>
                             </li>
                         </ul>
                     </nav>
                     <div class="rightBox">
-                        <!-- <div>
-                            <button>Home</button>
-                            <button>Blog</button>
-                        </div> -->
-                        <button class="freeBtn">30-Day Free Trial</button>
+                        <button class="freeBtn">Request a Demo</button>
                     </div>
                 </div>
             </div>
@@ -59,12 +54,10 @@
             <div class="header_mo">
                 <div class="top">
                     <h1>
-                        <span>
+                        <a href="../index.html">
                             logo
-                        </span>
+                        </a>
                     </h1>
-                    
-                
                     <!-- <div class="rightBox">
                         <div class="langBox">
                             <button class="langBtn_ko active">KO</button>
@@ -79,33 +72,36 @@
                 </div>
                 <div class="nav">
                     <ul>
-                        <li class="active">
-                            <span>
-                                Product
-                                <span class="arrow">
-                                    <img src="/assets/images/header_subArrow.png" alt="arrow">
-                                </span>
-                            </span>
-                            <div class="mo_sub_menu">
-                                <span>Features</span>
-                                <span>Pricing</span>
-                            </div>
+                        <li>
+                            <a href="../html/features.html">Features</a>
                         </li>
-                        <li class="active">
+                        <li>
+                            <a href="../html/pricing.html">Pricing</a>
+                        </li>
+                        <li>
                             <span>
                                 Resources
                                 <span class="arrow">
-                                    <img src="/assets/images/header_subArrow.png" alt="arrow">
+                                    <img src="../assets/images/header_subArrow.png" alt="arrow">
                                 </span>
                             </span>
-                            <div class="mo_sub_menu">
-                                <span>User Guide</span>
-                                <span>Blog</span>
-                            </div>
+                            <!-- <div class="mo_sub_menu">
+                                <a href="https://www.retentics.com/blog" target="_blank">Blog</a>
+                                <a href="userGuide/userGuide.html" target="_blank">User Guide</a>
+                            </div> -->
+
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="https://www.retentics.com/blog" target="_blank">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="../userGuide/userGuide.html" target="_blank">User Guide</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                     
-                    <button class="freeBtn">30-Day Free Trial</button>
+                    <button class="freeBtn">Request a Demo</button>
                 </div>
             </div>
         </header>
@@ -181,29 +177,28 @@
         <footer>
             <div>
                 <div>
-                    <span>
-                        <img src="/assets/images/footer_logo.png" alt="footer logo">
-                    </span>
+                    <a href="../index.html">
+                        <img src="../assets/images/footer_logo.png" alt="footer logo">
+                    </a>
                     <ul>
                         <li>
                             <span>Product</span>
                             <div>
-                                <span>Features</span>
-                                <span>Pricing</span>
+                                <a href="../html/features.html">Features</a>
+                                <a href="../html/pricing.html">Pricing</a>
                             </div>
                         </li>
                         <li>
                             <span>Resources</span>
                             <div>
-                                <span>User Guide</span>
-                                <span>Blog</span>
+                                <a href="https://www.retentics.com/blog" target="_blank">Blog</a>
                             </div>
                         </li>
                         <li>
                             <span>Company</span>
                             <div>
-                                <span>About us</span>
-                                <span>Contact</span>
+                                <a href="../html/aboutUs.html">About us</a>
+                                <a href="../html/contact.html">Contact</a>
                             </div>
                         </li>
                     </ul>
@@ -211,8 +206,8 @@
                 <div>
                     <p>© 2024 Fridays Lab. All rights reserved.</p>
                     <div>
-                        <button class="facebook"></button>
-                        <button class="linkedin"></button>
+                        <a href="https://www.youtube.com/@Retentics" target="_blank" class="youtube"></a>
+                        <a href="https://www.linkedin.com/company/retentics" target="_blank" class="linkedin"></a>
                     </div>
                 </div>
             </div>
